@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 
 const Landing = () => {
   return (
-    <div>
-      
+    <div className="cabin">
     </div>
   )
 }
