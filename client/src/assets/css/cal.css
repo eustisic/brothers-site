@@ -3,6 +3,8 @@
   border-radius: 6px;
   padding: 10px;
   background-color: #ffffff;
+  width: 75%;
+  margin: auto;
 }
 
 .calendar .rbc-off-range-bg {

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
-import EventModal from './Event/EventModal'
-import EventPopover from './Event/EventPopover'
+// import EventModal from './Event/EventModal'
+// import EventPopover from './Event/EventPopover'
 
 const localizer = momentLocalizer(moment)
 
@@ -25,14 +25,14 @@ const MyCalendar = () => {
       <div style={{ height: '100vh' }}>
         <Calendar
           localizer={localizer}
-          // events={transformItems(data.eventsList)}
-          components={{ event: EventPopover }}
+          events={myEventsList}
+          // components={{ event: EventPopover }}
           showMultiDayTimes
           selectable
           onSelectSlot={() => selectSlot()}
         />
 
-        <EventModal
+        {/* <EventModal
           isOpen={isModalOpen}
           closeModal={() => setIsModalOpen(false)}
           event={{
@@ -42,7 +42,7 @@ const MyCalendar = () => {
             email: '',
             description: ''
           }}
-        />
+        /> */}
       </div>
     </div>
   );
