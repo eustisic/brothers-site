@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
-// import EventModal from './Event/EventModal'
+import EventModal from '../Event/EventModal'
 // import EventPopover from './Event/EventPopover'
 
 const localizer = momentLocalizer(moment)
@@ -32,7 +32,7 @@ const MyCalendar = () => {
           onSelectSlot={() => selectSlot()}
         />
 
-        {/* <EventModal
+        <EventModal
           isOpen={isModalOpen}
           closeModal={() => setIsModalOpen(false)}
           event={{
@@ -42,7 +42,7 @@ const MyCalendar = () => {
             email: '',
             description: ''
           }}
-        /> */}
+        />
       </div>
     </div>
   );
